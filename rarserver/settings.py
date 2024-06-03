@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-oaln22qnncet$a$x^4lukm1t$0_e^&_d2x6yt-#eh1rspq(di+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', 'rarserver.lostmypillow.duckdns.org', 'rarclient.lostmypillow.duckdns.org']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', 'rarserver.lostmypillow.duckdns.org', 'rarclient.lostmypillow.duckdns.org', '192.168.72.88']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+     "corsheaders",
     "cards.apps.CardsConfig",
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,6 +42,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -51,7 +54,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'rarserver.urls'
-
+CORS_ALLOW_ALL_ORIGINS: True
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
