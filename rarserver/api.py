@@ -86,12 +86,15 @@ def get_attempts_today(request):
 @api.get("/attempts/monthly_summary", response=MonthlySeriesOut)
 def get_monthly_summary(request):
     today = date.today()
-    start_date = today - timedelta(days=30)
+    start_date = today.replace(day=1)  # First day of the current month
+
+    # Calculate the number of days in the current month
+    days_in_month = (start_date.replace(month=start_date.month % 12 + 1, day=1) - timedelta(days=1)).day
 
     # Initialize data containers
-    days = [start_date + timedelta(days=i) for i in range(31)]
-    successful_data = [0] * 31
-    failed_data = [0] * 31
+    days = [start_date + timedelta(days=i) for i in range(days_in_month)]
+    successful_data = [0] * days_in_month
+    failed_data = [0] * days_in_month
 
     # Fetch the count of successful and failed attempts grouped by date
     summary = RequestAttempt.objects.filter(timestamp__date__gte=start_date).values('timestamp__date').annotate(
