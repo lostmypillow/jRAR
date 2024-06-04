@@ -1,4 +1,4 @@
-# JSearch
+# RAR Server
 Django API Backend for Raspberry Pi | Arduino | RFID Project
 
 [Demo/API Documentation](https://rarserver.lostmypillow.duckdns.org/api/docs)
