@@ -22,8 +22,8 @@ docker pull lostmypillow/rarserver:1.0.3
 ```bash
 python -m pip install -r requirements.txt
 python -m manage.py runserver
-# OR alternatively
-
+# OR alternatively run it as a Docker container
+docker compose up
 ```
 
 
