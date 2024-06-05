@@ -1,6 +1,8 @@
 # RAR Server
 Django API Backend for Raspberry Pi | Arduino | RFID Project
 
+[GitHub for RAR Client](https://github.com/lostmypillow/rarclient)
+
 [Demo/API Documentation](https://rarserver.lostmypillow.duckdns.org/api/docs)
 
 Or alternatively pull my Docker image:
