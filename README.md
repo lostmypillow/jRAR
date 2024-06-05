@@ -1,8 +1,6 @@
 # RAR Server
 Django API Backend for Raspberry Pi | Arduino | RFID Project
 
-[GitHub for RAR Client](https://github.com/lostmypillow/rarclient)
-
 [Demo/API Documentation](https://rarserver.lostmypillow.duckdns.org/api/docs)
 
 Or alternatively pull my Docker image:
@@ -14,6 +12,9 @@ docker pull lostmypillow/rarserver:1.0.4
 #AMD64 version
 docker pull lostmypillow/rarserver:1.0.3
 ```
+
+
+[GitHub for RAR Client](https://github.com/lostmypillow/rarclient)
 
 ## Tech Stack
 **Django** with **Django Ninja** and **SQlite**
