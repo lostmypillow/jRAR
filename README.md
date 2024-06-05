@@ -2,6 +2,8 @@
 Django API Backend for Raspberry Pi | Arduino | RFID Project
 
 [Demo/API Documentation](https://rarserver.lostmypillow.duckdns.org/api/docs)
+=> proudly self-hosted on my RPi 3B+ at home
+
 
 Or alternatively pull my Docker image:
 
@@ -17,7 +19,7 @@ docker pull lostmypillow/rarserver:1.0.3
 [GitHub for RAR Client](https://github.com/lostmypillow/rarclient)
 
 ## Tech Stack
-**Django** with **Django Ninja** and **SQlite**
+**Django** with **Django Ninja** and **SQLite**
 
 
 ## Recreate this Project
