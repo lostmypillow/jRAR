@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-oaln22qnncet$a$x^4lukm1t$0_e^&_d2x6yt-#eh1rspq(di+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', 'rarserver.lostmypillow.duckdns.org', 'rarclient.lostmypillow.duckdns.org', '192.168.72.88']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'localhost', 'rarserver.lostmypillow.duckdns.org', 'rarclient.lostmypillow.duckdns.org', '192.168.72.88', 'rarserver.onrender.com']
 
 
 # Application definition
