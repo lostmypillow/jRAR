@@ -1,4 +1,5 @@
-FROM --platform=linux/arm64 python:3-slim-buster
+# FROM --platform=linux/arm64 python:3-slim-buster
+FROM python:3-slim-buster
 
 EXPOSE 8001
 
