@@ -35,7 +35,7 @@ WORKDIR /app
 COPY . /app
 
 
-COPY --from=vite_builder /frontend/out /app/frontend/out
+COPY --from=vite_builder /frontend/dist /app/frontend/dist
 
 
 RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
