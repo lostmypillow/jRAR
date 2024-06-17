@@ -3,6 +3,8 @@
 
 [Demo/Frontend](https://rarserver.lostmypillow.duckdns.org/)
 
+Source code for frontend is located in the "/frontend" folder
+
 [API Documentation](https://rarserver.lostmypillow.duckdns.org/api/docs)
 
 Or alternatively pull my Docker image:
@@ -13,9 +15,9 @@ docker pull lostmypillow/jrar:1.0.0
 ```
 
 
-[GitHub for RAR Client](https://github.com/lostmypillow/rarclient)
 
-## Why does the URL start with "rarserver"
+
+## Why does the URL start with "rarserver"?
 This project was named "rarserver" originally, when I separated backend and frontend, the NGINX proxy configs require me to manually update it if I were to change it to "jrar", I'll do that soon but not now
 
 
