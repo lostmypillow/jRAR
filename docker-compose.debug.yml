@@ -1,8 +1,8 @@
 version: '3.4'
 
 services:
-  rarserver:
-    image: rarserver
+  jrar:
+    image: jrar
     build:
       context: .
       dockerfile: ./Dockerfile

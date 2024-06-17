@@ -1,7 +1,7 @@
 # RAR Server
 Django API Backend for Raspberry Pi | Arduino | RFID Project
 
-[Demo/API Documentation](https://rarserver.lostmypillow.duckdns.org/api/docs)
+[Demo/API Documentation](https://jrar.lostmypillow.duckdns.org/api/docs)
 => proudly self-hosted on my RPi 3B+ at home
 
 
@@ -9,10 +9,10 @@ Or alternatively pull my Docker image:
 
 ```bash
 #ARM64 version
-docker pull lostmypillow/rarserver:1.0.4
+docker pull lostmypillow/jrar:1.0.4
 
 #AMD64 version
-docker pull lostmypillow/rarserver:1.0.3
+docker pull lostmypillow/jrar:1.0.3
 ```
 
 
