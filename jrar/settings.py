@@ -32,7 +32,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['jrar.lostmypillow.duckdns.org', 'rarserver.lostmypillow.duckdns.org', 'localhost']
+ALLOWED_HOSTS = ['jrar.lostmypillow.duckdns.org', 'rarserver.lostmypillow.duckdns.org', 'localhost', '0.0.0.0']
 
 
 # Application definition
