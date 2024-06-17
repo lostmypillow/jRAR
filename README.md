@@ -2,8 +2,6 @@
 Django API Backend for Raspberry Pi | Arduino | RFID Project
 
 [Demo/API Documentation](https://jrar.lostmypillow.duckdns.org/api/docs)
-=> proudly self-hosted on my RPi 3B+ at home
-
 
 Or alternatively pull my Docker image:
 
