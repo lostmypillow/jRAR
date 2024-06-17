@@ -1,4 +1,4 @@
-# RAR Server
+# JRAR
 **Django** web app for Raspberry Pi | Arduino | RFID Project, complete with **Django Ninja** API backend, **SQLite** database and a **Vite(React)** frontend with MUI components
 
 [Demo/Frontend](https://rarserver.lostmypillow.duckdns.org/)
