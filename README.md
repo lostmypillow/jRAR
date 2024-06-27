@@ -4,11 +4,11 @@
 - **SQLite** database
 - **Vite(React)** frontend x **MUI** components
 
-[Demo/Frontend](https://rarserver.lostmypillow.duckdns.org/)
+[Demo/Frontend](https://jrar.lostmypillow.duckdns.org/)
 
 Source code for frontend is located in the "/frontend" folder
 
-[API Documentation](https://rarserver.lostmypillow.duckdns.org/api/docs)
+[API Documentation](https://jrar.lostmypillow.duckdns.org/api/docs)
 
 Or alternatively pull my Docker image:
 
@@ -16,13 +16,6 @@ Or alternatively pull my Docker image:
 #ARM64 version
 docker pull lostmypillow/jrar:1.0.0
 ```
-
-
-
-
-## Why does the URL start with "rarserver"?
-This project was named "rarserver" originally, when I separated backend and frontend, the NGINX proxy configs require me to manually update it if I were to change it to "jrar", I'll do that soon but not now
-
 
 ## Future for this Project
 
