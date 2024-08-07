@@ -1,19 +1,36 @@
 {
+    "version": "0.2.0",
     "configurations": [
+   
         {
-            "name": "Docker: Python - Django",
-            "type": "docker",
+            "name": "Django server",
+            "type": "debugpy",
             "request": "launch",
-            "preLaunchTask": "docker-run: debug",
-            "python": {
-                "pathMappings": [
-                    {
-                        "localRoot": "${workspaceFolder}",
-                        "remoteRoot": "/app"
-                    }
-                ],
-                "projectType": "django"
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver"
+            ],
+            "django": true,
+            "justMyCode": true,
+            "env": {
+                "ALLOWED_HOSTS": "*",
+                "SECRET_KEY": "k2ll2%kbk=lke3v2=^qmv!v$xh(u2l_!cut2$_$hj($m*)fwcf",
+            }
+        },
+        {
+            "name": "Django test",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py", 
+            "args": [
+                "test",
+                "app_name.api.tests.test_x.test_t.TestXYZ"
+            ],
+            "django": true,
+            "justMyCode": true,
+            "env": {
+                "SECRET_KEY": "k2ll2%kbk=lke3v2=^qmv!v$xh(u2l_!cut2$_$hj($m*)fwcf",
             }
         }
     ]
-}
+   }

@@ -21,25 +21,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 import os
-from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
-
-# Now you can access the environment variables
-SECRET_KEY = os.getenv('SECRET_KEY')
-
+SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['jrar.lostmypillow.duckdns.org', 'rarserver.lostmypillow.duckdns.org', 'localhost', '0.0.0.0']
+ALLOWED_HOSTS = ['jrar.lostmypillow.duckdns.org', 'localhost', '0.0.0.0']
 
 
 # Application definition
 
-STATIC_URL = 'django_static/'
 
-REACT_APP_BUILD_PATH='frontend/dist/'
 
 
 INSTALLED_APPS = [

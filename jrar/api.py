@@ -1,15 +1,11 @@
 from ninja import NinjaAPI, Schema
 from typing import List, Dict
-
 from cards.models import Card, RequestAttempt
 from django.shortcuts import get_object_or_404
 from datetime import date, datetime, timedelta
 from django.db.models import Count, Q
 api = NinjaAPI()
 
-# @api.get("/hello")
-# def hello(request):
-#     return "Hello world"
 
 class CardOut(Schema):
     card_val: str
@@ -64,7 +60,6 @@ def delete_card(request, card_value: str):
     return {"success": True}
 
 
-# New endpoints
 @api.post("/attempt")
 def create_attempt(request, successornot):
     card = RequestAttempt.objects.create(successful = successornot)
@@ -86,17 +81,15 @@ def get_attempts_today(request):
 @api.get("/attempts/monthly_summary", response=MonthlySeriesOut)
 def get_monthly_summary(request):
     today = date.today()
-    start_date = today.replace(day=1)  # First day of the current month
+    start_date = today.replace(day=1)
 
-    # Calculate the number of days in the current month
     days_in_month = (start_date.replace(month=start_date.month % 12 + 1, day=1) - timedelta(days=1)).day
 
-    # Initialize data containers
     days = [start_date + timedelta(days=i) for i in range(days_in_month)]
     successful_data = [0] * days_in_month
     failed_data = [0] * days_in_month
 
-    # Fetch the count of successful and failed attempts grouped by date
+
     summary = RequestAttempt.objects.filter(timestamp__date__gte=start_date).values('timestamp__date').annotate(
         successful_count=Count('id', filter=Q(successful=True)),
         failed_count=Count('id', filter=Q(successful=False))
