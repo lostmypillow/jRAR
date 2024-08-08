@@ -6,7 +6,8 @@ EXPOSE 8001
 
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-
+ARG SECRET_KEY
+ENV SECRET_KEY = ${SECRET_KEY}
 
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
