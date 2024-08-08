@@ -2,9 +2,20 @@
 ## What is it?
 A school project. It demonstrates automotive IoT (sort of). This repo stores the Django backend and React frontend. 
 
-[**Demo website**](https://jrar.lostmypillow.duckdns.org/)
+[**React frontend**](https://github.com/lostmypillow/jRAR-web)
 
-Demo video belowww
+[**Demo website**](https://lostmypillow.github.io/jRAR-web)
+
+[**API Docs**](https://jrar.lostmypillow.duckdns.org/api/docs)
+
+[**Backup API Docs (Loads slow!)**](https://jrar-latest.onrender.com/api/docs)
+
+
+**Demo video below**
+
+https://github.com/user-attachments/assets/7e0da181-2ff6-4c8c-aa30-8ee38f792b5e
+
+
 ## How does it work?
 1. One swiped an RFID card against an RFID sensor connected to an Arduino.
 2. The Arduino send the card number to the Raspberrry Pi 400 via wired connection
@@ -21,5 +32,3 @@ Demo video belowww
 
 
 
-## Demo video
-https://github.com/user-attachments/assets/7e0da181-2ff6-4c8c-aa30-8ee38f792b5e
