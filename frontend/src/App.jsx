@@ -131,6 +131,9 @@ function App() {
   const [cardList, setCardList] = useState([]);
 
   async function GetTotalAttempts() {
+
+
+    
     await fetch('/api/attempts/total')
       .then(response => response.json())
       .then(data => setTotalAttempts(data.total_attempts))
