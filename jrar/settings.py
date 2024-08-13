@@ -26,7 +26,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['jrar.lostmypillow.duckdns.org', 'localhost', '0.0.0.0', 'jrar-latest.onrender.com', 'lostmypillow.github.io/jRAR']
+ALLOWED_HOSTS = ['jrar.lostmypillow.duckdns.org', 'localhost', '0.0.0.0', 'jrar-latest.onrender.com', 'lostmypillow.github.io/jRAR-web']
 
 
 # Application definition
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
-CORS_ALLOWED_ORIGINS = ['http://localhost:5173']
+CORS_ALLOWED_ORIGINS = ['http://localhost:5173', 'lostmypillow.github.io/jRAR-web']
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
