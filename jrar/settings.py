@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
-CORS_ALLOWED_ORIGINS = ['http://localhost:5173', 'lostmypillow.github.io/jRAR-web']
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173', 'https://lostmypillow.github.io/jRAR-web']
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
