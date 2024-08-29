@@ -24,6 +24,7 @@ https://github.com/user-attachments/assets/7e0da181-2ff6-4c8c-aa30-8ee38f792b5e
 5. Backend sends "ok" or "not authorized" signal to RPi
 6. RPi sends 0 or 9 to Arduino
 7. Arduino flashes light differently based on the number it recieves. (couldn't get this part right tho)
+![image](https://github.com/user-attachments/assets/a81383d4-4c07-4278-bba2-7929305c2db2)
 
 ## Tech Stack
 - **Django Ninja** API endpoints
