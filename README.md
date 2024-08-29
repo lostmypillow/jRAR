@@ -2,6 +2,9 @@
 ## What is it?
 A school project. It demonstrates automotive IoT (sort of). This repo stores the Django backend and React frontend. 
 
+![unnamed](https://github.com/user-attachments/assets/c4c2fbbf-5278-4d73-aa17-dab5e2d72b25)
+
+
 [**React frontend**](https://github.com/lostmypillow/jRAR-web)
 
 [**Demo website**](https://lostmypillow.github.io/jRAR-web)
