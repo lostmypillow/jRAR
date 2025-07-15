@@ -26,7 +26,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['jrar.lostmypillow.duckdns.org', 'localhost', '0.0.0.0', 'jrar-latest.onrender.com', 'lostmypillow.github.io']
+ALLOWED_HOSTS = ['jrar.lostmypillow.duckdns.org', 'localhost', '0.0.0.0', 'jrar-latest.onrender.com', 'lostmypillow.github.io', 'jrar.pages.dev']
 
 
 # Application definition
